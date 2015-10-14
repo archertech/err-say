@@ -1,6 +1,6 @@
 [Core]
 Name = SayBot
-Module = say
+Module = saybot
 
 [Documentation]
 Description = A command for saying things

@@ -1,0 +1,9 @@
+[Core]
+Name = SayBot
+Module = say
+
+[Documentation]
+Description = A command for saying things
+
+[Python]
+Version = 2+

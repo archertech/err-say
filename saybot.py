@@ -7,4 +7,7 @@ class SayBot(BotPlugin):
     def say(self, mess, args):
         """A command that lets you tell the bot what to say on a channel"""
 
-        self.send(args[0], args[1], message_type="groupchat")
+        if len(args) < 2:
+          yield "I don't understand what you meant."
+        else:
+          self.send(self.build_identifier(args[0]), args[1])

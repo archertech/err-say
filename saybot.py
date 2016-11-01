@@ -10,4 +10,4 @@ class SayBot(BotPlugin):
         if len(args) < 2:
           yield "I don't understand what you meant."
         else:
-          self.send(self.build_identifier(args[0]), ' '.join(args[1:]))
+          self.send(self.build_identifier(args[0]), ':'.join(args[1:]))
